@@ -1,27 +1,45 @@
 function printBox(width, height) {
 
-    for (var i = 0; i < height; i++) {
+  for (var i = 0; i < height; i++) {
 
-      var line = '';
+    var line = ' ';
 
-      for (var j = 0; j < width; j++) {
+    for (var j = 0; j < width; j++) {
 
-        if (i === 0 ||  i === height - 1 || j === 0 || j === width - 1) {
+      if (i === 0 ||  i === height - 1 || j === 0 || j === width - 1) {
 
-          line += '*';
+        line += '*';
 
-        } else {
+      } else {
 
-          line += ' ';
-
-        }
+        line += ' ';
 
       }
 
-      console.log(line);
-
     }
+
+    console.log(line);
 
   }
 
-  printBox(5, 4);
+}
+
+printBox(5, 4);
+
+printBox(6, 5);
+
+module.exports = printBox
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
