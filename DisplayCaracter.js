@@ -21,3 +21,15 @@ function displayCaracter(x) {
 }
 
 displayCaracter(20);
+
+module.exports = displayCaracter
+
+
+
+
+
+
+
+
+
+   
